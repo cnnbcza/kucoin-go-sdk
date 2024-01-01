@@ -123,7 +123,6 @@ func NewUnsubscribeMessage(topic string, privateChannel bool) *WebSocketUnsubscr
 // A WebSocketDownstreamMessage represents a message from the WebSocket server to client.
 type WebSocketDownstreamMessage struct {
 	*WebSocketMessage
-	Sn      string          `json:"sn"`
 	Topic   string          `json:"topic"`
 	Subject string          `json:"subject"`
 	RawData json.RawMessage `json:"data"`
